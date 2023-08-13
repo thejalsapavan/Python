@@ -1,0 +1,6 @@
+sl=int(input("Enter the basic pay : "))
+hra=float((0.3*sl))
+ta=float((0.15*sl))
+pf=float((0.05*sl))
+print("Gross Salary : ",sl+hra+ta)
+print("Net Salary : ",sl+hra+ta-pf)
