@@ -1,0 +1,26 @@
+def credit(de,ac,amt):
+    for i in range(0,len(de)):
+        if ac in de[i]:
+            de[i][2]=amt+de[i][2]
+            print("Transaction successfull")
+            break
+    else:
+        print("Account number not Found")
+    print(de)
+        
+def debit(de,ac,amt):
+    for i in range(0,len(de)):
+        if ac in de[i]:
+            if(de[i][2] >amt):
+                de[i][2]=de[i][2]-amt
+                print("Transaction successfull")
+            else:
+                print("Funds not Sufficient")
+            break
+    else:
+        print("Account number not Found")
+    print(de)
+    
+                                                        
+    
+    
