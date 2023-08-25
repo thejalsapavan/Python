@@ -20,7 +20,17 @@ def debit(de,ac,amt):
     else:
         print("Account number not Found")
     print(de)
-    
+
+def order(de):
+    n=len(de)
+    for i in range(n-1):
+        for j in range(0,n-i-1):
+            if de[j][2]>de[j+1][2]:
+                temp=de[j][2];
+                de[j][2]=de[j+1][2]
+                de[j+1][2]=temp
+    print(de)            
+        
                                                         
     
     

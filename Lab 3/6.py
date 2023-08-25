@@ -11,7 +11,17 @@ for i in range(n):
     te.append(c)
     de.append(te)
 print(de)
-
-t.credit(de,500,6000)
-t.credit(de,123,5000)
-t.debit(de,1234,400)
+ni=int(input("Enter the no of transactions to be performed:"))
+for i in range(ni):
+    print("Enter the choice : \n1.Debit\n2.credit\n3.order")
+    c=int(input())
+    if c==1:
+        s=int(input("Enter the Account No:"))
+        am=float(input("Enter the amount to be debited:"))
+        t.debit(de,s,am)
+    elif c==2:
+        s=int(input("Enter the Account No:"))
+        am=float(input("Enter the amount to be credited:"))
+        t.credit(de,s,am)
+    else:
+        t.order(de)
