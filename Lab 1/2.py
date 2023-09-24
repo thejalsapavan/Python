@@ -1,0 +1,5 @@
+a=int(input("Enterr the value of a : "))
+b=int(input("Enterr the value of b : "))
+c=int(input("Enterr the value of c : "))
+print("Greatest Number : ")
+print(a) if(a>b)and(a>c) else print(b) if(b>a) and (b>c) else print(c)

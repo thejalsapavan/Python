@@ -1,0 +1,8 @@
+m1=int(input("Enter the marks : "))
+m2=int(input("Enter the marks : "))
+m3=int(input("Enter the marks : "))
+m4=int(input("Enter the marks : "))
+m5=int(input("Enter the marks : "))
+avg=float((m1+m2+m3+m4+m5)/5)
+print("Average : ",avg)
+print("Total : ",avg*5)
