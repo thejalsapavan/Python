@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Student Info</title>
+</head>
+<body>
+	<h1 style="align-items: center;">Student Info</h1>
+	<form action="StudentDetails">
+		<center>
+			<label>Reg No</label><input type="text" name="reg"><br><br>
+			<label>Name</label><input type="text" name="nam"><br><br>
+			<label>Mark 1 : </label><input type="text" name="m1"><br><br>
+			<label>Mark 2 : </label><input type="text" name="m2"><br><br>
+			<input type="submit" value="Submit">
+			<br><br>
+			<h1>
+				{% if flag == 1 %}
+				<br>Student Details:<br>
+				<br>Reg No : {{robj}}<br>
+				<br>Average : {{aobj}}<br>
+				<br>Name : {{nobj}}<br>
+				{% elif flag == 2 %}
+					<br>Message : {{Msg}}<br>
+				{% endif %}
+			</h1>
+		</center>
+	</form>
+</body>
+</html>
