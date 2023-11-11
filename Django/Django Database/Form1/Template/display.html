@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee</title>
+	<style>
+		label{
+				font-weight:bold;
+		}
+	</style>
+</head>
+<body style="font-family:'Arial';color:aliceblue;background-color:black;">
+	<center>
+		<h1>Employee Details</h1>
+		{% for post in form %}
+		<p>
+			<label style="font-size:20px">Id: </label>{{post.id}}
+			<br><label>Employee Id: </label>{{post.empid}}
+			<br><label>Employee Name: </label>{{post.empname}}
+			<br><label>Employee Salary:  </label>{{post.empsalary}}
+			<br><label>Employee Address: </label>{{post.empaddress}}
+		</p>
+		{% endfor %}
+	</center>
+</body>
+</html>
