@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <center>
+        <h1>Hostel Pupil's Details </h1>
+        <p>
+            {% for x in form %}
+            id:{{x.id}}
+            Name:{{x.name}}<br>
+            Age: {{x.Age}}<br>
+            Phone No: {{x.PhoneNumber}}<br>
+            Address: {{x.Address}}<br>
+            Native Place: {{x.nativePlace}}<br>
+            {% endfor %}
+        </p>
+    </center>
+</body>
+</html>
